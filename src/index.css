@@ -11,10 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* * {
+  border: 1px solid red;
+} */
 
 .car-hire-form {
   width: 50%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.completed-order {
+  margin: auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: left;
+  grid-gap: 10px;
+}
+
+.completed-order div {
+  margin: 0;
 }
