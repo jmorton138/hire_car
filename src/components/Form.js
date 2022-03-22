@@ -1,7 +1,6 @@
 import { React } from "react";
 import { useState } from "react";
 import { CarInfo } from "./CarInfo";
-
 export const Form = (props) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -20,7 +19,6 @@ export const Form = (props) => {
         <label htmlFor="name">Full Name</label>
         <input
           type="text"
-          required="true"
           name="name"
           onChange={(e) => {
             setState({ ...state, name: e.target.value });
@@ -29,7 +27,6 @@ export const Form = (props) => {
         <label htmlFor="email-address">Email</label>
         <input
           type="email"
-          required="true"
           name="email-address"
           onChange={(e) => {
             setState({ ...state, email: e.target.value });
@@ -46,7 +43,6 @@ export const Form = (props) => {
         <label htmlFor="start">Begin car hire</label>
         <input
           type="date"
-          required="true"
           name="start"
           onChange={(e) => {
             setState({ ...state, start: e.target.value });
@@ -55,7 +51,6 @@ export const Form = (props) => {
         <label htmlFor="end">End car hire</label>
         <input
           type="date"
-          required="true"
           name="end"
           onChange={(e) => {
             setState({ ...state, end: e.target.value });
